@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pravila</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pravila - Wordle</title>
 </head>
+
 <body>
-    <h1>Pravila</h1>
+
+    <header>
+        <h1>Wordle</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#meni">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="meni">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Početna stranica</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="prijava.html">Prijava</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="registracija.html">Registracija</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pravila.html">Pravila</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="container rules-container">
+
+        <h2>Pravila igre</h2>
+
+        <p>
+            Cilj igre je pogoditi skrivenu riječ od pet slova
+            u najviše šest pokušaja.
+        </p>
+
+        <h3>Kako igrati?</h3>
+
+        <ul>
+            <li>Unesi riječ od pet slova.</li>
+            <li>Pritisni ENTER kako bi provjerio svoj pokušaj.</li>
+            <li>Imaš ukupno šest pokušaja za pogađanje riječi.</li>
+            <li>Možeš koristiti tipkovnicu na ekranu ili tipkovnicu računala.</li>
+        </ul>
+
+        <h3>Značenje boja</h3>
+
+        <div class="rule-example">
+            <div class="tile green">A</div>
+            <p>Slovo je točno i nalazi se na pravom mjestu.</p>
+        </div>
+
+        <div class="rule-example">
+            <div class="tile yellow">B</div>
+            <p>Slovo se nalazi u skrivenoj riječi, ali na drugom mjestu.</p>
+        </div>
+
+        <div class="rule-example">
+            <div class="tile gray">C</div>
+            <p>Slovo se ne nalazi u skrivenoj riječi.</p>
+        </div>
+
+        <p class="mt-4">
+            Ako pogodiš riječ prije isteka šest pokušaja, pobijedio si!
+        </p>
+
+    </main>
+
+    <footer>
+        <p>Wordle projekt</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

@@ -1,26 +1,93 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
     <title>Wordle</title>
 </head>
+
 <body>
+
     <header>
-        <h1>Dobrodošli na Wordle!</h1>
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="home.html">Početna stranica</a></li>
-                <li><a href="prijava.html">Prijava</a></li>
-                <li><a href="registracija.html">Registracija</a></li>
-                <li><a href="pravila.html">Pravila</a></li>
-            </ul>
-        </nav>
+        <h1>Wordle</h1>
     </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#meni">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="meni">
+
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Početna</a>
+                    </li>
+
+                    <li class="nav-item" id="nav-prijava">
+                        <a class="nav-link" href="prijava.html">Prijava</a>
+                    </li>
+
+                    <li class="nav-item" id="nav-registracija">
+                        <a class="nav-link" href="registracija.html">Registracija</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pravila.html">Pravila</a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav ms-lg-auto">
+
+                    <li class="nav-item d-none" id="nav-korisnik">
+                        <span class="nav-link" id="korisnik-ime"></span>
+                    </li>
+
+                    <li class="nav-item d-none" id="nav-odjava">
+                        <a class="nav-link" href="odjava.html" id="gumb-odjava">Odjava</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="container text-center">
+
+        <h2>Wordle - Pogodi riječ!</h2>
+
+        <p>Pronađi skrivenu riječ od 5 slova u 6 pokušaja.</p>
+
+        <div id="game-board"></div>
+
+        <div id="keyboard"></div>
+
+        <p id="message">Pogodi riječ od 5 slova!</p>
+
+        <button id="new-game" class="btn btn-primary">
+            Nova igra
+        </button>
+
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="rijeci.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-<footer>
-  <hr>
-  <a href="terms.html">TERMS AND CONDITIONS</a>  
-</footer>
 </html>

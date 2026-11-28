@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    padding-top: 30px;
+}
+
+#game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.wordle-row {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.tile {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #878a8c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.green {
+    background-color: #538d4e;
+    border-color: #538d4e;
+    color: white;
+}
+
+.yellow {
+    background-color: #b59f3b;
+    border-color: #b59f3b;
+    color: white;
+}
+
+.gray {
+    background-color: #3a3a3c;
+    border-color: #3a3a3c;
+    color: white;
+}
+
+#keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 25px auto;
+    max-width: 500px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.key {
+    flex: 1;
+    min-width: 0;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d3d6da;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.wide-key {
+    flex: 1.5;
+    font-size: 12px;
+}
+
+.key:hover {
+    background-color: #aaa;
+}
+
+#message {
+    font-weight: bold;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 65vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-card h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.auth-description {
+    color: #777777;
+    margin-bottom: 25px;
+}
+
+.auth-card .form-control {
+    padding: 10px;
+}
+
+.auth-card .btn {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.auth-bottom {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.auth-bottom a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-bottom a:hover {
+    text-decoration: underline;
+}
+
+#poruka {
+    font-weight: bold;
+}
+
+.rules-container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.rules-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.rules-container h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.rules-container li {
+    margin-bottom: 8px;
+}
+
+.rule-example {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.rule-example .tile {
+    flex-shrink: 0;
+}
+
+.rule-example p {
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    .auth-card {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .tile {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .key {
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .wide-key {
+        font-size: 10px;
+    }
+}
